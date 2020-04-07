@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+    <ImageView
+        android:id="@+id/img_input"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/input"/>
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INPUT DATA"
+        android:textSize="30sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_input"/>
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_input"
+        android:text="Full Name"
+        android:layout_centerHorizontal="true"/>
+
+    <DatePicker
+        android:id="@+id/dp_input"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_nama"/>
+    <RadioGroup
+        android:id="@+id/rg_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dp_input"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Male"
+            />
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Female"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Address"
+        android:layout_below="@id/rg_input"
+        android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/cb_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_address"
+        android:layout_centerHorizontal="true"
+        android:text="Stay At Home"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_input"
+        android:text="Submit"
+        android:onClick="Submit"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_marginHorizontal="100dp"
+        android:background="#3F51B5"/>
+</RelativeLayout>
